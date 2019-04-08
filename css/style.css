@@ -9,9 +9,7 @@
 body{
 	font-family: 'Noto Sans TC','Playfair Display', arial, sans-serif;
 }
-.wrapper{
-	background-color: #1c1c1c;
-}
+
 h1{
     font-size: 72px;
     color: aliceblue;
@@ -25,6 +23,7 @@ h1{
     height: 100vh;
     width: 100vw;
     border: 2px red solid;
+    transition: all 0.3s;
 }
 header{
     position: fixed;
@@ -71,17 +70,21 @@ header a{
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 270px;
-  height: 300px;
+  width: 100%;
+  height: 100vh;
   background: yellow;
   overflow: hidden;
   transform: translateX(450px);
   z-index: 100;
+  transition: 0.3s all;
   
 }
-/* .open .main{
-  transform: translateX(270px);
-} */
+.open header{
+  transform: translateX(-270px);
+}
+.open .wrapper{
+  transform: translateX(-270px);
+}
 .open .aside{   
   transform: translateX(150px);
 }

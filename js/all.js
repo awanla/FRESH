@@ -4,7 +4,7 @@ $(document).ready(function () {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', '5thPage'],
         menu: '#myMenu'
     });
-    $('header').click(function (event) {
+    $('.menu_icon').click(function (event) {
         /* Act on the event */
         $('body').toggleClass('open');
     });
