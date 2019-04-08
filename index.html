@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bs-layout.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>fullpage</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+
+            <div class="logo">FRASH</div>
+            <ul class="meanu">
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <a class="menu_icon" href="">
+                <i class="fas fa-grip-lines"></i>
+            </a>
+            
+
+
+        </header>
+        <div class="aside"></div>
+        <div id="fullpage">
+            <div class="section pic01" data-anchor="firstPage">
+                <div class="container">
+                    <div class="title">
+                        <h1>FRASH</h1>
+                    </div>
+                    <div class="title">
+                        <h1>新鮮量販，即時美味</h1>
+                    </div>
+                    <div class="btn">GET IT</div>
+                </div>
+            </div>
+            <div class="section" data-anchor="secondPage">2</div>
+            <div class="section" data-anchor="thirdPage">3</div>
+            <div class="section" data-anchor="fourthPage">4</div>
+            <div class="section" data-anchor="5thPage">5</div>
+        </div>
+        <ul id="myMenu" class="side-nav">
+            <li data-menuanchor="firstPage" class="active"><a class="side-nav__item" href="#firstPage"></a></li>
+            <li data-menuanchor="secondPage"><a class="side-nav__item" href="#secondPage"></a></li>
+            <li data-menuanchor="thirdPage"><a class="side-nav__item" href="#thirdPage"></a></li>
+            <li data-menuanchor="fourthPage"><a class="side-nav__item" href="#fourthPage"></a></li>
+            <li data-menuanchor="5thPage"><a class="side-nav__item" href="#5thPage"></a></li>
+        </ul>
+    </div>
+
+
+    <!-- js -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fullpage.min.js "></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
