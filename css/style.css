@@ -58,7 +58,8 @@ header a{
     position: absolute;
     right: 30px;
     font-size: 30px;
-
+    cursor: pointer;
+    display: none;
 }
 
 @media(max-width:425px){
@@ -66,18 +67,21 @@ header a{
     display: none;
     }
 }
+/*-------------------------*/
+/* $aside
+---------------------------*/
 .aside{
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
   height: 100vh;
-  background: yellow;
+  background: #3c3c3c;
   overflow: hidden;
   transform: translateX(450px);
   z-index: 100;
   transition: 0.3s all;
-  
+  display: none;
 }
 .open header{
   transform: translateX(-270px);
@@ -87,6 +91,42 @@ header a{
 }
 .open .aside{   
   transform: translateX(150px);
+}
+
+@media (max-width:425px){
+    .aside{
+        display: block;
+    }
+    .menu_icon{
+    
+    display: block;
+}
+}
+.open .icon{
+    transform: translateX(450px);
+}
+.aside_icon{
+     transform: translateX(450px);
+     
+}
+.open .aside_icon{
+    position: absolute;
+    color: #ffffce;
+    font-size: 30px;
+    top:0;
+    left: 0%;
+    z-index: 100;
+    transform: translateX(0px);
+}
+.popup{
+    margin: 20px;
+}
+.popup li{ 
+    margin: 0px;
+}
+.popup a{
+    color:#ffffce; 
+    font-size: 40px;
 }
 
 /*-------------------------*/
