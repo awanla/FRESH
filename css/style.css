@@ -614,6 +614,12 @@ input.btn:focus{
     .form .text_content{
     height: 30vh;
     }
+    .form{
+    height: 80vh;
+    background-color: #3c3c3c;
+    padding: 20px;
+}
+
 }
 
 
