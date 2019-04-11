@@ -576,6 +576,10 @@ input.btn:focus{
 .form textarea:focus {
     outline: 0;
     border-color: #44beea;
+    
+}
+.form .text_content{
+    height: 40vh;
 }
 .form .input-container{
 	margin-top: 32px;
@@ -594,7 +598,16 @@ input.btn:focus{
 	color: #ffffce;
 	transform: translate(-8px,-26px);
 }
-
+@media (max-width:425px){
+   .contact_pic{
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .form .text_content{
+    height: 30vh;
+    }
+}
 
 
 /*-------------------------*/
@@ -614,9 +627,10 @@ input.btn:focus{
 .footer span{
     margin: 0 5px;
 }
-/* @media (max-width:425px){
+@media (max-width:425px){
    .footer{
     height: 20vh;
     flex-direction:column;
+    margin-top: 10px;
 } 
-} */
+}
