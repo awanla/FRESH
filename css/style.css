@@ -439,11 +439,17 @@ header a{
 @media (max-width:411px){
     .shop .col-xs-3{
         width: 100%;
+        margin: 10px 0;
     }
     .buy{
     bottom: 0%;
-    
+    height: 20%;
+    padding-top: 10px;
     }
+    .shop_pic{
+        height: 50%;
+    }
+
 
 }
 
