@@ -22,7 +22,7 @@ h1{
 .wrapper{
     
     width: 100vw;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     transition: all 0.3s;
     overflow: hidden;
     
@@ -32,14 +32,19 @@ header{
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 100;
-    margin: 20px;
+	z-index: 100;    
+    
+}
+.header_scroll{
+    background-color: #696969;
+    opacity: .7;
 }
 .logo{
     font-size: 30px;
     color: #ffffce;
     float: left;
     clear: both;
+    margin: 20px;
     
 }
 header a{
@@ -49,6 +54,8 @@ header a{
     float: right;
     margin-top: 5px;
     margin-right: 40px;
+     margin: 20px;
+     margin-top: 30px;
 }
 .meanu li{
     float: left;
@@ -179,7 +186,7 @@ header a{
 
 .section{
    background-color:#E3E3E3;
-   border: 3px solid blue; 
+   /* border: 3px solid blue;  */
    height: 100vh; 
 }
 
@@ -210,6 +217,7 @@ header a{
     background-color:#3c3c3c;
     color: #ffffce;
     padding: 20px;
+    
 }
 .title h2{
     margin: 0;
@@ -219,10 +227,17 @@ header a{
     color: #ffffce;
     padding: 20px;
     font-size: 50px;
+    margin-top: 10%;
+}
+
+@media(max-width:425px){
+    .title h1{
+        font-size: 60px;
+    }
 }
 
 
-.btn{
+.top_btn{
     position: absolute;
     font-size: 50px;
     background-color:#ffffce;
@@ -256,12 +271,11 @@ header a{
 ---------------------------*/
 
 
-.section02{
-    border: 3px solid blue;
-}
+
 
 .section02 .col-xs-12{
     padding: 0;
+    margin-top: 20px;
 }
 .section02 .s02_pic{
     height: 60vh;
@@ -290,6 +304,7 @@ header a{
 /*-------------------------*/
 /* $thirdPage
 ---------------------------*/
+
 .card{
     background-color: #fff;
     padding: 0;
@@ -334,6 +349,9 @@ header a{
        height: 200px;
        width: 100%;
    }
+   .service .container{
+       padding: 0;
+   }
 }
 .all{
     width: 100%;
@@ -349,16 +367,256 @@ header a{
     color:#ffffce;
     background-color:#3c3c3c ;
     padding: 10px 20px;    
-
+    transition: all 0.3s;
 }
 .position_btn{
     position: absolute;
     bottom: 0;
     right: 0;
+    
 }
 .position_btn:hover .more_btn{
-    background-color:#ffffce;
-    color:#3c3c3c ;
-    border: 3px solid #3c3c3c ;
-    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 }
+
+/*-------------------------*/
+/* $fourthPage
+---------------------------*/
+.shop .col-xs-3{
+    height: 40vh;
+    /* border: 2px solid red; */
+    background: #fff;
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow:2px 2px 2px rgba(20%,20%,40%,0.3),4px 4px 6px rgba(20%,20%,40%,0.2);
+    padding: 0;
+}
+.shop a:hover .shop_pic{
+    background-size: 170%;
+}
+.shop_pic{
+    height: 60%;
+    background-size: cover;
+    background-position: center center;
+    background-size: 150%;
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+    
+}
+.shop_mask{
+    top: 90%;
+    left: -20%;
+    height: 40%;
+    width: 150%;
+    background-color: #fff;
+    transform:rotate(5deg);
+}
+
+.shop_title{
+    text-align: center;
+}
+.shop_title h1{
+    color: red;
+    margin: 0;
+    font-size: 50px;
+}
+.shop_title h3{
+    margin: 5px 0;
+}
+.buy{
+    height: 10%;
+    background-color: #3c3c3c;
+    bottom: -20%;
+    color: #ffffce;
+    text-align: center;
+    transition: all 0.3s;
+}
+.shop a:hover .buy{
+    bottom: -10%; 
+}
+@media (max-width:411px){
+    .shop .col-xs-3{
+        width: 100%;
+    }
+    .buy{
+    bottom: 0%;
+    
+    }
+
+}
+
+.shop .title{
+    margin-top: 40px;
+}
+
+/*-------------------------*/
+/* $5thPage
+---------------------------*/
+.contact{
+    background-image: url(../stripes-light/stripes-light.png);
+    
+}
+.contact .title{
+    padding: 0;
+}
+
+
+.contact_pic{
+    height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contact_pic::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3c3c3c;
+    opacity: .7;
+}
+/* Btn */
+.btn{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 12px 48px;
+    color: #000;
+    border: 1px solid #999;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 4px;
+    line-height: 24px;
+    cursor: pointer;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+}
+input.btn:focus{
+	outline: 0;
+}
+.btn.btn--primary{
+	background: #ffffce;
+	border: 0px;
+	color: #3c3c3c;
+    transition: box-shadow 0.3s;
+    
+}
+.btn.btn--primary:hover{
+	box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+@media (max-width:425px){
+    .contact .col-xs-6{
+        width: 100%;
+    }
+    .contact .contact_form{
+    height: 10vh;
+    background-color: #3c3c3c;
+    overflow: visible;
+    padding: 0;
+}
+
+}
+.contact .col-xs-6{
+    padding: 0;
+}
+/* Form */
+
+.form{
+    height: 70vh;
+    background-color: #3c3c3c;
+    
+    padding: 20px;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea {
+    padding: 8px 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    color: #666;
+    resize : none;
+}
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: 0;
+    border-color: #44beea;
+}
+.form .input-container{
+	margin-top: 32px;
+}
+.form .label-text{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 8px 12px;
+	color: #999;
+	pointer-events: none;
+	transition: all 0.3s;
+}
+.form .label-text.is-active{
+	font-size: 15px;
+	color: #ffffce;
+	transform: translate(-8px,-26px);
+}
+
+
+
+/*-------------------------*/
+/* $footer
+---------------------------*/
+.footer{
+    height: 5vh;
+    background-color: #3c3c3c;
+    display: flex;
+    justify-content:center;
+}
+.footer h4{
+   margin: 10px;
+   color: #ffffce;
+   font-weight: 400;
+}
+.footer span{
+    margin: 0 5px;
+}
+/* @media (max-width:425px){
+   .footer{
+    height: 20vh;
+    flex-direction:column;
+} 
+} */
