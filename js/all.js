@@ -27,6 +27,15 @@ $(document).ready(function () {
             $(this).parent().find(".label-text").removeClass("is-active");
         }
     })
+    $(window).scroll(function () {
+        var scrollDistance = $(window).scrollTop();
+        if (scrollDistance > 863) {
+            $("header").addClass("header_scroll");
+        }
+        else {
+            $('header').removeClass('header_scroll');
+        }
+    });
     
     $(window).resize(function () {
     var windowWidth = $(window).width();
@@ -50,6 +59,7 @@ $(document).ready(function () {
         else {
             $('.tp').removeClass('all');
         }
+    
     
     });
     

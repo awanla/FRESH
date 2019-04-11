@@ -34,6 +34,7 @@ header{
 	width: 100%;
 	z-index: 100;    
     
+    transition: all 0.5s;
 }
 .header_scroll{
     background-color: #696969;
@@ -69,6 +70,7 @@ header a{
     font-size: 30px;
     cursor: pointer;
     display: none;
+    margin-top: 20px;
 }
 
 @media(max-width:425px){
