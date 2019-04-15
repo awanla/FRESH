@@ -442,14 +442,16 @@ header a{
         margin: 10px 0;
     }
     .buy{
-    bottom: 0%;
+    bottom: -10%;
     height: 20%;
     padding-top: 10px;
     }
     .shop_pic{
         height: 50%;
     }
-
+    .shop a:hover .buy{
+    bottom: -10%; 
+}
 
 }
 
@@ -615,9 +617,10 @@ input.btn:focus{
     height: 30vh;
     }
     .form{
-    height: 100vh;
+    height: 70vh;
     background-color: #3c3c3c;
     padding: 20px;
+    
 }
 
 }
